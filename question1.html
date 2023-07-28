@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 1</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        required
+        maxlength="25"
+      />
+      <br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        value="test@example.com"
+        autofocus
+        required
+      />
+      <br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        minlength="6"
+      />
+      <br />
+      <label for="category">Category</label>
+      <select name="category" id="category" required>
+        <option value="student">Student</option>
+        <option value="employee">Employee</option>
+        <option value="freelancer" selected>Freelancer</option>
+      </select>
+      <br />
+      <label for="eventdate">Event Date</label>
+      <input type="date" name="eventdate" id="eventdate" />
+      <br />
+      <div>
+        <input type="radio" name="ticket" id="ticket" value="1 ticket" />
+        <label for="oneticket">1 ticket</label>
+        <br />
+        <input
+          type="radio"
+          name="ticket"
+          id="twoticket"
+          value="2 ticket"
+          checked
+        />
+        <label for="twoticket">2 ticket</label>
+        <br />
+        <input type="radio" name="ticket" id="threeticket" value="3 ticket" />
+        <label for="threeticket">3 ticket</label>
+      </div>
+      <input type="checkbox" name="onlinepayment" id="onlinepayment" required />
+      <label for="onlinepayment">Online Payment</label>
+      <br />
+      <label for="notes">Notes</label>
+      <br />
+      <textarea name="notes" id="notes" cols="30" rows="10" required></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
